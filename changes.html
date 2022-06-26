@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8" />
+    <title>GalaxyGaming Inu</title>
+    <meta name="description" content="" />
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/homeV2/GGI logo.png" />
+    <!-- Bootstrap v4.4.1 css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <!-- magnific css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+    <!--Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+
+    <!-- <script type="text/javascript" src="web3.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.0/ethers.umd.min.js"></script>
+    <style>
+        .gamesmimg {
+            width: 120px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="GamfiBody">
+        <!--Preloader area start here-->
+        <section class="loader_first">
+            <div class="circular-spinner"></div>
+        </section>
+        <!--Preloader area End here-->
+
+
+        <div class="gamfi_header_V2">
+            <!--Header Start-->
+            <header id="gamfi-header" class="gamfi-header-section transparent-header">
+                <div class="menu-area menu-sticky">
+                    <div class="container">
+                        <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                            <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                                <div class="logo">
+                                    <a href="index.html"><img class="logo_main_class" src="assets/images/homeV2/GGI logo.png" alt=""></a>
+                                </div>
+                                <div class="header-menu">
+                                    <ul class="nav-menu">
+                                        <li><a href="index.html">Home</a>
+                                            <!-- <ul class="sub-menu">
+                                            <li><a href="index.html">Home 1</a></li>
+                                            <li><a href="index2.html">Home 2</a></li>
+                                            <li><a href="index-V3.html">Home 3</a></li>
+                                        </ul> -->
+                                        </li>
+                                        <li><a href="project.html">Games</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Game name</a></li>
+                                                <li><a href="#">Game name</a></li>
+                                                <li><a href="#">Game name</a></li>
+                                                <li><a href="#">Game name</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">About</a>
+                                        </li>
+                                        <li><a href="#">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gamfi-btn-area">
+                                <ul>
+                                    <li>
+                                        <a id="nav-expander" class="nav-expander bar" href="#">
+                                            <div class="bar">
+                                                <span class="dot1"></span>
+                                                <span class="dot2"></span>
+                                                <span class="dot3"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="newclass isConnected">
+                                        <button type="button" class="readon white-btn hover-shape " onclick="getAccount()" class="enableEthereumButton">
+                                        <span class="btn-text"> </span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                    </li>
+                                    <li class='isConnected2'>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Canvas Mobile Menu start -->
+                <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                    <div class="close-btn">
+                        <a id="nav-close2" class="nav-close">
+                            <div class="line">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-logo mb-30">
+                        <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="current-menu-item"><a href="index.html">Home</a>
+                            <!-- <ul class="sub-menu">
+                                <li><a href="index.html">Home 1</a></li>
+                                <li><a href="index2.html">Home 2</a></li>
+                                <li><a href="index-V3.html">Home 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="project.html">Projects</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Game name</a></li>
+                                <li><a href="#">Game name</a></li>
+                                <li><a href="#">Game name</a></li>
+                                <li><a href="#">Game name</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Help</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Buy Token</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">PancakeSwap</a></li>
+                                <li><a href="#">UniSwap</a></li>
+                                <li><a href="#">CoinMarketCap</a></li>
+                                <li><a href="#">Gate.io</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- <button type="button" class="readon black-shape-big connectWalletBtnforMobile" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/images/icons/connect_white.png" alt="Icon">
+                            <span class="btn-text">Connect </span>
+                            <span class="hover-shape1"></span>
+                            <span class="hover-shape2"></span>
+                            <span class="hover-shape3"></span>
+                        </button> -->
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Canvas Menu end -->
+            </header>
+            <!--Header End-->
+            <div class="gamfiV2_HeroSect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="gamfi_V2_hero_Left">
+                                <h2>Play to earn <br> Web <span>3.0</span> Ecosystem</h2>
+                                <p>The next generation gaming ecosystem</p>
+                                <div class="gamfi_V2_hero_Btns">
+                                    <a href="project.html">
+                                        <button type="button" class="readon white-btn hover-shape VIEW_Projects_Btn">
+                                           <span class="btn-text">VIEW Games</span>
+                                           <span class="hover-shape1"></span>
+                                           <span class="hover-shape2"></span>
+                                           <span class="hover-shape3"></span>
+                                       </button>
+                                    </a>
+                                    <a class="readon black-shape Apply_Project_Btn" href="igo-apply.html">
+                                        <span class="btn-text">Submit Games <br><small style="font-size: 10px;">Coming Soon</small></span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </a>
+                                </div>
+                                <div class="buyTokenlogos">
+                                    <h6>Get Our Custom Token</h6>
+                                    <!-- <ul>
+                                        <li><a href="\">GGI <img src="assets/images/homeV2/buyTokenlogo1.png" alt="logo" class="img-fluid" /></a></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gamfi_V2_hero_right">
+                                <div class="gamfi_V2_heroRocket">
+                                    <img src="assets/images/homeV2/rocket-front-color.png" alt="Rocket Img" class="Img-fluid RedRocketImg" />
+                                    <span class="rocketshadow1"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow2"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow3"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow4"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow5"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Market_CapSect">
+            <div class="container">
+                <div class="Market_CapAllContent">
+                    <div class="Market_CapContent">
+                        <h2>Market Cap</h2>
+                        <h3 class="counter-number">$<span class="counter">490.88</span>M</h3>
+                    </div>
+                    <div class="Market_CapContent">
+                        <h2>Coin value</h2>
+                        <h3 class="counter-number">$<span class="counter">38.60</span>M</h3>
+                    </div>
+                    <div class="Market_CapContent">
+                        <h2>Price</h2>
+                        <h3 class="counter-number">$<span class="counter">0.009</span></h3>
+                    </div>
+                    <div class="Market_CapContent">
+                        <h2>Tokens Released</h2>
+                        <h3 class="counter-number"> <span class="counter">160.48 </span>M</h3>
+                    </div>
+                </div>
+            </div>
+            <span class="redBordergradient"></span>
+            <span class="greenBordergradient"></span>
+        </div>
+
+
+        <!-- Project Section Start -->
+        <div class="gamfi-project-section ProjectPools_Sect main-project-area pb-0">
+            <div class="container">
+                <div class="sec-inner align-items-center d-flex justify-content-between mb-30">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">EXPLORE</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">Games POOL</h2>
+                    </div>
+                    <div class="gamfi-btn-area ProjectV2_TabBtns">
+                        <ul>
+                            <li class="ProjectV2_tablinks m-0" onclick="openProject(event, 'ProectV2_OnGoing')" id="OpenProject">
+                                <button class="readon white-btn black-shape"> 
+                                    <span class="btn-text">On going</span>
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button>
+                            </li>
+
+                            <li class="ProjectV2_tablinks" onclick="openProject(event, 'ProectV2_UPCOMING')">
+                                <button class="readon white-btn black-shape"> 
+                                    <span class="btn-text">UPCOMING</span>
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ProjectV2_TabContentSect">
+                    <div id="ProectV2_OnGoing" class="ProjectV2_tabcontent animate_opacity">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="project-item project_itemV2 hover-shape-border">
+                                    <div class="project-info d-flex">
+                                        <!-- <a href="http://localhost/galaxy-gaming/games/Astray-master/start.html"> -->
+                                        <img onclick="setGame(1)" class="gamesmimg" src="assets/images/homeV2/astray_master_small.jpg" alt="Project-Image" />
+                                        <!-- </a> -->
+                                        <div class="project-auother">
+                                            <h4 class="mb-10">
+                                                <div onclick="setGame(1)">Astray Master</div>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header d-flex justify-content-between">
+                                            <div class="heading-title heading-titleV2">
+                                                <div class="price-counter">
+                                                    <div class="timer">
+                                                        <ul>
+                                                            <li> 3D Maze</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-media">
+                                            <ul class="project-listing">
+                                                <li>Game Type <span>Level</span></li>
+                                                <li>Average Coin earned<span></span></li>
+                                                <li>Token Released<span>0 GGI</span></li>
+                                                <li>Access type <span>Public</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="astray-master-play">
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="project-item project_itemV2 hover-shape-border">
+                                    <div class="project-info d-flex">
+                                        <a>
+                                            <img onclick="setGame(2)" class="gamesmimg" src="assets/images/homeV2/tower blocks main page.png" alt="Project-Image" />
+                                        </a>
+                                        <div class="project-auother">
+                                            <h4 class="mb-10">
+                                                <div onclick="setGame(2)">Tower Blocks</div>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header d-flex justify-content-between">
+                                            <div class="heading-title heading-titleV2">
+                                                <div class="price-counter">
+                                                    <div class="timer">
+                                                        <ul>
+                                                            <li class="days">Highscore Game</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-media">
+                                            <ul class="project-listing">
+                                                <li>Game Type <span>Highscore</span></li>
+                                                <li>Average Coin earned<span></span></li>
+                                                <li>Token Released<span>0 GGI</span></li>
+                                                <li>Access type <span>Public</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tower-blocks-play">
+
+                                    </div>
+                                    <span class="border-shadow shadow-1"></span>
+                                    <span class="border-shadow shadow-2"></span>
+                                    <span class="border-shadow shadow-3"></span>
+                                    <span class="border-shadow shadow-4"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="project-item project_itemV2 hover-shape-border">
+                                    <div class="project-info d-flex">
+                                        <!-- <a> -->
+                                        <img onclick="setGame(3)" class="gamesmimg" src="assets/images/homeV2/coloron img - small banner.png" alt="Project-Image" />
+                                        <!-- </a> -->
+                                        <div class="project-auother">
+                                            <h4 class="mb-10">
+                                                <div onclick="setGamme(3)">Coloron</div>
+                                            </h4>
+                                        </div>
+                                        <!-- http://localhost/galaxy-gaming/games/coloron/dist -->
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header d-flex justify-content-between">
+                                            <div class="heading-title heading-titleV2">
+                                                <div class="price-counter">
+                                                    <div class="timer">
+                                                        <ul>
+                                                            <li class="days">Highscore Game</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-media">
+                                            <ul class="project-listing">
+                                                <li>Game Type <span>Level</span></li>
+                                                <li>Average Coin earned<span></span></li>
+                                                <li>Token Released<span>0 GGI</span></li>
+                                                <li>Access type <span>Public</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="coloron-play">
+
+                                    </div>
+                                    <span class="border-shadow shadow-1"></span>
+                                    <span class="border-shadow shadow-2"></span>
+                                    <span class="border-shadow shadow-3"></span>
+                                    <span class="border-shadow shadow-4"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="project-item project_itemV2 hover-shape-border">
+                                    <div class="project-info d-flex">
+                                        <!-- <a href="http://localhost/galaxy-gaming/games/radius-raid/"> -->
+                                        <img class="gamesmimg" onclick="setGame(6)" src="assets/images/homeV2/radus raid.jpg" alt="Project-Image" />
+                                        <!-- </a> -->
+                                        <div class="project-auother">
+                                            <h4 class="mb-10">
+                                                <div onclick="setGame(6)">Radius Raid</div>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header d-flex justify-content-between">
+                                            <div class="heading-title heading-titleV2">
+                                                <div class="price-counter">
+                                                    <div class="timer">
+                                                        <ul>
+                                                            <li class="days">Shooter</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-media">
+                                            <ul class="project-listing">
+                                                <li>Game Type <span>Shooting</span></li>
+                                                <li>Average Coin earned<span></span></li>
+                                                <li>Token Released<span>0 GGI</span></li>
+                                                <li>Access type <span>Public</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="radius-raid-play">
+
+
+                                    </div>
+                                    <span class="border-shadow shadow-1"></span>
+                                    <span class="border-shadow shadow-2"></span>
+                                    <span class="border-shadow shadow-3"></span>
+                                    <span class="border-shadow shadow-4"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="project-item project_itemV2 hover-shape-border">
+                                    <div class="project-info d-flex">
+                                        <!-- <a href="http://localhost/galaxy-gaming/games/hextris/"> -->
+                                        <img class="gamesmimg" onclick="setGame(4)" src="assets/images/homeV2/hextrix.jpg" alt="Project-Image" />
+                                        <!-- </a> -->
+                                        <div class="project-auother">
+                                            <h4 class="mb-10">
+                                                <div onclick="setGame(6)">Hextris</div>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header d-flex justify-content-between">
+                                            <div class="heading-title heading-titleV2">
+                                                <div class="price-counter">
+                                                    <div class="timer">
+                                                        <ul>
+                                                            <li class="days">Highscore Game</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-media">
+                                            <ul class="project-listing">
+                                                <li>Game Type <span>Highscore</span></li>
+                                                <li>Average Coin earned<span></span></li>
+                                                <li>Token Released<span>0 GGI</span></li>
+                                                <li>Access type <span>Public</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="social_icons_Sect">
+                                        <div class="hextris-play">
+
+                                        </div>
+
+                                    </div>
+                                    <span class="border-shadow shadow-1"></span>
+                                    <span class="border-shadow shadow-2"></span>
+                                    <span class="border-shadow shadow-3"></span>
+                                    <span class="border-shadow shadow-4"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="project-item project_itemV2 hover-shape-border">
+                                    <div class="project-info d-flex">
+                                        <!-- <a href="project-details.html"> -->
+                                        <img class="gamesmimg" onclick="setGame(5)" src="assets/images/homeV2/fruit-ninja-apple-arcade.jpg" alt="Project-Image" />
+                                        <!-- </a> -->
+                                        <!-- http://localhost/galaxy-gaming/games/fruit-ninja/source/ -->
+                                        <div class="project-auother">
+                                            <h4 class="mb-10">
+                                                <div onclick="setGame(5)">Fruit Ninja</div>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="project-content ">
+                                        <div class="project-header d-flex justify-content-between ">
+                                            <div class="heading-title heading-titleV2 ">
+                                                <div class="price-counter ">
+                                                    <div class="timer ">
+                                                        <ul>
+                                                            <li class="days ">Highscore Game</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-media ">
+                                            <ul class="project-listing ">
+
+                                                <li>Game Type <span>Level</span></li>
+                                                <li>Average Coin earned<span></span></li>
+                                                <li>Token Released<span>0 GGI</span></li>
+                                                <li>Access type <span>Public</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- querySelector here -->
+                                    <div class="fruit-ninja-play">
+
+                                    </div>
+                                    <span class="border-shadow shadow-1 "></span>
+                                    <span class="border-shadow shadow-2 "></span>
+                                    <span class="border-shadow shadow-3 "></span>
+                                    <span class="border-shadow shadow-4 "></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Key Points Start -->
+        <div class="Key_Points_section main-project-area ">
+            <div class="keyPointBg ">
+                <div class="bgStone ">
+                    <span class="stone1 "><img src="assets/images/icons/stone1.svg " alt=" " class="img-fluid " /></span>
+                    <span class="stone2 "><img src="assets/images/icons/stone2.svg " alt=" " class="img-fluid " /></span>
+                    <span class="stone3 "><img src="assets/images/icons/stone3.svg " alt=" " class="img-fluid " /></span>
+                </div>
+            </div>
+
+            <!-- Modal Section End-->
+        </div>
+
+        <div class="How_to_Participate_Sect ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <div class="How_to_Participate_Left ">
+                            <div class="sec-heading ">
+                                <div class="sub-inner mb-15 ">
+                                    <span class="sub-title ">3 EASY STEPS</span>
+                                    <img class="heading-left-image " src="assets/images/icons/steps.png " alt="Steps-Image " />
+                                </div>
+                                <h2 class="title ">How to Participate and Earn</h2>
+                            </div>
+                            <div class="How_to_Participate_Left_Contnet ">
+                                <p>We at Galaxy Gaming offer you clean and enjoyable environment where you have the chance to earn our custom GGI token which playing the most addictive games on our plateform. To do so you have to just follow some simple
+                                    steps and get started playing our games.
+                                </p>
+                                <!-- <div class="How_to_Participate_Left_Btn ">
+                                    <a class="view-more black-shape " href="kyc_process.html ">
+                                        <span class="btn-text ">Verify KYC</span>
+                                        <i class="icon-arrow_right "></i>
+                                        <span class="hover-shape1 "></span>
+                                        <span class="hover-shape2 "></span>
+                                        <span class="hover-shape3 "></span>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="How_to_Participate_right_Contnet ">
+                            <div class="How_to_Participate_right_Card How_to_Participate_right_Card1 ">
+                                <div class="How_to_Participate_right_Card_number ">
+                                    <img src="assets/images/icons/One.svg " alt="img " class="img-fluid " />
+                                </div>
+                                <div class="How_to_Participate_right_CardText ">
+                                    <h4>Install Metamask</h4>
+                                    <p>To create a new wallet you have to install the extension first. Depending on your browser, there are different marketplaces to find it. Most browsers have MetaMask on their stores, so it’s not that hard to see it, but
+                                        either way, here they are Chrome, Firefox, and Opera.</p>
+                                </div>
+                            </div>
+                            <div class="How_to_Participate_right_Card How_to_Participate_right_Card2 ">
+                                <div class="How_to_Participate_right_Card_number ">
+                                    <img src="assets/images/icons/two.svg " alt="img " class="img-fluid " />
+                                </div>
+                                <div class="How_to_Participate_right_CardText ">
+                                    <h4>Create a New Account</h4>
+                                    <p>Create a new BSC wallet, you can refer official Binance <u><a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain ">documentation</a></u>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="How_to_Participate_right_Card How_to_Participate_right_Card3 ">
+                                <div class="How_to_Participate_right_Card_number ">
+                                    <img src="assets/images/icons/three.svg " alt="img " class="img-fluid " />
+                                </div>
+                                <div class="How_to_Participate_right_CardText ">
+                                    <h4>Connect</h4>
+                                    <p>Just Click Connect and start earning <b>Rewards</b> which are out of the Galaxy!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lockerImg ">
+                    <img src="assets/images/icons/locker-dynamic-color.png " alt="img " class="img-fluid " />
+                </div>
+            </div>
+            <div class="moon_imgBg ">
+                <img src="assets/images/icons/earthBg.svg " alt="img " class="img-fluid " />
+            </div>
+        </div>
+        <div class="Key_Points_section main-project-area ">
+            <div class="keyPointBg ">
+                <div class="bgStone ">
+                    <span class="stone1 "><img src="assets/images/icons/stone1.svg " alt=" " class="img-fluid " /></span>
+                    <span class="stone2 "><img src="assets/images/icons/stone2.svg " alt=" " class="img-fluid " /></span>
+                    <span class="stone3 "><img src="assets/images/icons/stone3.svg " alt=" " class="img-fluid " /></span>
+                </div>
+            </div>
+            <div class="container ">
+                <div class="sec-inner align-items-center mb-30 ">
+                    <div class="sec-heading ">
+                        <div class="sub-inner mb-15 ">
+                            <span class="sub-title ">FEATURES</span>
+                            <img class="heading-left-image " src="assets/images/icons/steps.png " alt="Steps-Image " />
+                        </div>
+                        <h2 class="title ">Key Points</h2>
+                    </div>
+                    <div class="Key_Points_Conttent ">
+                        <div class="row ">
+                            <div class="col-md-3 ">
+                                <div class="Key_Points_Items ">
+                                    <div class="Key_Points_Item_img ">
+                                        <img src="assets/images/icons/Key_icon1.png " alt="icon " class="img-fluid " />
+                                    </div>
+                                    <div class="Key_Points_Item_Text ">
+                                        <h3>Decentralized</h3>
+                                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="Key_Points_Items ">
+                                    <div class="Key_Points_Item_img ">
+                                        <img src="assets/images/icons/Key_icon2.png " alt="icon " class="img-fluid " />
+                                    </div>
+                                    <div class="Key_Points_Item_Text ">
+                                        <h3>Secure Bridge</h3>
+                                        <p>Sucurely transfer GGI token from your GGI account to you metamask account in just some simple Hassle-free steps. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="Key_Points_Items ">
+                                    <div class="Key_Points_Item_img ">
+                                        <img src="assets/images/icons/Key_icon3.png " alt="icon " class="img-fluid " />
+                                    </div>
+                                    <div class="Key_Points_Item_Text ">
+                                        <h3>Fair Allocations</h3>
+                                        <p>Get token every time you play games on GGI.Does'nt matter how many time you play the game you will get benefited every time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="Key_Points_Items ">
+                                    <div class="Key_Points_Item_img ">
+                                        <img src="assets/images/icons/Key_icon4.png " alt="icon " class="img-fluid " />
+                                    </div>
+                                    <div class="Key_Points_Item_Text ">
+                                        <h3>Autopilot Liquidity</h3>
+                                        <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- RoadMapV2 Section Start -->
+        <div class="RoadMapV2_section main-project-area">
+            <div class="container">
+                <div class="sec-inner align-items-center d-flex justify-content-between mb-30">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">Our Goals</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">ROADMAPs</h2>
+                    </div>
+                    <div class="gamfi-btn-area RoadmapTabBtns">
+                        <ul>
+                            <li class="tablinks m-0" onclick="openCity(event, 'RoadmapV2_2021')">
+                                <button class="readon white-btn black-shape"> 
+                                    <span class="btn-text">2021</span>
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button>
+                            </li>
+
+                            <li class="tablinks" onclick="openCity(event, 'RoadmapV2_2022')" id="defaultOpen">
+                                <button class="readon white-btn black-shape"> 
+                                    <span class="btn-text">2022</span>
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button>
+                            </li>
+
+                            <li class="tablinks" onclick="openCity(event, 'RoadmapV2_2023')">
+                                <button class="readon white-btn black-shape"> 
+                                    <span class="btn-text">2023</span>
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="RoadMapV2_TabContentSect">
+                    <div class="RoadMapShape">
+                        <img src="assets/images/bg/roadMap_Line.svg" alt="" class="img-fluid" />
+                    </div>
+                    <div id="RoadmapV2_2021" class="tabcontent animate_opacity">
+                        <div class="RoadmapV2TabContent RoadmapV2TabContent_2021">
+                            <div class="RoadMapSilkSliderSection">
+                                <div class="row m-0">
+                                    <div class="col-md-4">
+                                        <div class="RoadMapContents">
+                                            <h3>Q1 2021</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid" /></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Seed Sale</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>IDO & Token DEX Listing</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Contract Audit</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Staking</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Integration of POLYGON</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="RoadMapContents">
+                                            <h3>Q2 2021</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid" /></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Launch on GamFi </li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span> Auction system integration.</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Mobile app for iOS and Android.</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Development of NFT Marketplace</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Game launch</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Website with MVP Release</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="RoadMapContents">
+                                            <h3>Q3 2021</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid" /></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Launchpad Release</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Access for indie game developers</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>New Staking Tiers</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Public token sell</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="RoadmapV2_2022" class="tabcontent animate_opacity">
+                        <div class="RoadmapV2TabContent RoadmapV2TabContent_2022">
+                            <div class="RoadMapSilkSliderSection">
+                                <div class="row m-0 slickSlider_2022">
+                                    <div class="col-md-12">
+                                        <div class="RoadMapContents">
+                                            <h3>Q1 2022</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid" /></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Seed Sale</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>IDO & Token DEX Listing</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Contract Audit</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Staking</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Integration of POLYGON</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="RoadMapContents">
+                                            <h3>Q2 2022</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid" /></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Launch on GamFi </li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span> Auction system integration.</li>
+                                                    <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid" /></span>Mobile app for iOS and Android.</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Development of NFT Marketplace</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Game launch</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Website with MVP Release</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="RoadMapContents disable">
+                                            <h3>Q3 2022</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Launchpad Release</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Access for indie game developers</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>New Staking Tiers</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Public token sell</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="RoadMapContents disable">
+                                            <h3>Q4 2022</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Access for indie game developers</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>New Staking Tiers</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Public token sell</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span> Auction system integration.</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Mobile app for iOS and Android.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="RoadmapV2_2023" class="tabcontent animate_opacity">
+                        <div class="RoadmapV2TabContent RoadmapV2TabContent_2023">
+                            <div class="RoadMapSilkSliderSection">
+                                <div class="row m-0">
+                                    <div class="col-md-4">
+                                        <div class="RoadMapContents disable">
+                                            <h3>Q1 2023</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Seed Sale</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>IDO & Token DEX Listing</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Contract Audit</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Staking</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Integration of POLYGON</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="RoadMapContents disable">
+                                            <h3>Q2 2023</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Launch on GamFi </li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span> Auction system integration.</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Mobile app for iOS and Android.</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Development of NFT Marketplace</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Game launch</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Website with MVP Release</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="RoadMapContents disable">
+                                            <h3>Q3 2023</h3>
+                                            <div class="RoadmapListSect">
+                                                <div class="CheckIconBg"></div>
+                                                <ul>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Launchpad Release</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Access for indie game developers</li>
+                                                    <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>New Staking Tiers</li>
+                                                    <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid" /></span>Public token sell</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="Frame1"><img src="assets/images/bg/RoadMapV2Fram.png" alt="" class="img-fluid" /></span>
+            <span class="Frame2"><img src="assets/images/bg/RoadMapV2Frame2.png" alt="" class="img-fluid" /></span>
+        </div>
+        <!-- RoadMapV2 Section End -->
+        <!-- Footer Section Start -->
+        <div class="gamfi-footer-section ">
+            <div class="container ">
+                <div class="footer-cta-area text-center active-shape hover-shape-inner ">
+                    <h2 class="title mb-15 ">
+                        Apply for project<br /> incubation
+                    </h2>
+                    <div class="dsc mb-40 md-mb-30 ">
+                        If you want to lanuch an IGO/IDO, It will be your perfect choice
+                    </div>
+                    <a class="banner-btn wow fadeInUp black-shape " data-wow-delay="300ms " data-wow-duration="2500ms " href="igo-apply.html ">
+                        <span class="btn-text ">Apply For IGO</span>
+                        <span class="hover-shape1 "></span>
+                        <span class="hover-shape2 "></span>
+                        <span class="hover-shape3 "></span>
+                    </a>
+                    <span class="border-shadow shadow-1 "></span>
+                    <span class="border-shadow shadow-2 "></span>
+                    <span class="border-shadow shadow-3 "></span>
+                    <span class="border-shadow shadow-4 "></span>
+                    <span class="hover-shape-bg hover_shape1 "></span>
+                    <span class="hover-shape-bg hover_shape2 "></span>
+                    <span class="hover-shape-bg hover_shape3 "></span>
+                </div>
+            </div>
+            <div class="footer-area ">
+                <div class="container ">
+                    <div class="sec-heading text-center ">
+                        <div class="sub-inner mb-52 mb-mb-30 ">
+                            <img class="heading-right-image " src="assets/images/icons/steps2.png " alt="Steps-Image " />
+                            <span class="sub-title white-color ">Find us on Social</span>
+                            <img class="heading-left-image " src="assets/images/icons/steps.png " alt="Steps-Image " />
+                        </div>
+                    </div>
+                    <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50 ">
+                        <ul class="footer-icon-list ">
+                            <li><a href="# "><i class="icon-twitter "></i></a></li>
+                            <li><a href="# "><i class="icon-telegram "></i></a></li>
+                            <li><a href="# "><i class="icon-discord "></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-logo text-center mb-45 ">
+                        <img src="assets/images/homeV2/GGI logo.png" alt="Footer-logo " style="width: 60px;" />
+                    </div>
+                    <div class="footer-mainmenu text-center mb-20 ">
+                        <ul>
+                            <li><a href="# ">Features</a></li>
+                            <li><a href="# ">How it works</a></li>
+                            <li><a href="# ">Token info</a></li>
+                            <li><a href="# ">About us</a></li>
+                            <li><a href="# ">Social media</a></li>
+                            <li><a href="# ">Terms of Service</a></li>
+                            <li><a href="# ">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright-area text-center mb-0 ">
+                        <div class="dsc mb-37 md-mb-25 ">Copyright © 2022. All Rights Reserved by
+                            <a target="_blank " class="gafi " href="# ">GaFi</a>
+                        </div>
+                    </div>
+                    <div class="scrollup text-center ">
+                        <a href="#gamfi-header "><i class="icon-arrow_up "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+        <!-- Modal Section Start-->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: #000000cc;" >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h4 class="modals-title  mb-0" id="exampleModalLabel">Connect Wallet</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-x"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-20">Please Connect with below wallet to play games and earn Coins</p>
+                        <div class="connect-section">
+                            <ul class="heading-list">
+                                <li><a href="#"><span><img src="assets/images/icons/meta-mask.png" alt="Meta-mask-Image"></span>MetaMask</a></li>
+                            </ul>
+                        </div>
+                        <p>By connecting your wallet, you agree to our <a href="#"><span class="modal-title">Terms of Service </span>
+                            </a>and our <a href="#"><span class="modal-title"> Privacy Policy</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Section End-->
+        <script>
+
+            function connectmetamask(){
+                console.log('Connect your metamask wallet');
+            }
+            function setGame(e) {
+                localStorage.setItem('gameid', e);
+                if (localStorage.account)
+                    window.location.href = "project-details.html"
+            }
+
+
+            const user_connected = document.querySelector('.isConnected');
+            const user_connected2 = document.querySelector('.isConnected2');
+            const fruit_ninja_play = document.querySelector('.fruit-ninja-play');
+            const radius_raid_play = document.querySelector('.radius-raid-play');
+            const tower_blocks_play = document.querySelector('.tower-blocks-play');
+            const coloron_play = document.querySelector('.coloron-play');
+            const astray_master_play = document.querySelector('.astray-master-play');
+            const hextris_play = document.querySelector('.hextris-play');
+            if (!localStorage.userid) {
+                user_connected.innerHTML = `
+                <button type="button" class="readon white-btn hover-shape " onclick="getAccount()" class="enableEthereumButton">
+                                        <span class="btn-text"><img src="assets/images/icons/connect.png" alt="Icon">Connect </span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                `;
+                fruit_ninja_play.innerHTML = `
+                                                <button class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;" onclick="connectmetamask()" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="static" data-keyboard="false">
+                                                    <b>Play</b>
+                                            </button>
+                                        `;
+                radius_raid_play.innerHTML = `<button class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;" onclick="connectmetamask()" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="static" data-keyboard="false">
+                                                    <b>Play</b>
+                                            </button>`;
+                hextris_play.innerHTML = `<button class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;" onclick="connectmetamask()" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="static" data-keyboard="false">
+                                                    <b>Play</b>
+                                            </button>`;
+                coloron_play.innerHTML = `<button class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;" onclick="connectmetamask()" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="static" data-keyboard="false">
+                                                    <b>Play</b>
+                                            </button>`;
+                astray_master_play.innerHTML = `<button class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;" onclick="connectmetamask()" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="static" data-keyboard="false">
+                                                    <b>Play</b>
+                                            </button>`;
+                tower_blocks_play.innerHTML = `<button class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;" onclick="connectmetamask()" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="static" data-keyboard="false">
+                                                    <b>Play</b>
+                                            </button>`
+            } else {
+                // user_connected.innerHTML = "<div>con</div>";
+                const account = localStorage.account;
+                const body = {
+                    account
+                };
+                (async() => {
+                    const response = await fetch("https://testapi.galaxygaminginu.com/add_user/getCoins", {
+                        method: "POST",
+                        headers: {
+                            "Content-type": "application/json"
+                        },
+                        body: JSON.stringify(body)
+                    });
+                    const parseRes = await response.json();
+                    let tokensAvailable = 0;
+                    tokensAvailable = parseRes.coins;
+                    // console.log(parseRes, "here ");
+                    // console.log(localStorage.account.substr(0, 7));
+                    const scriptHTML = `<button type="button" class="readon white-btn hover-shape " onclick=discconnectwallet()>
+                                        <span class="btn-text">${localStorage.account.substr(0,10)}....</span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>`;
+                    user_connected.innerHTML = scriptHTML;
+                    user_connected2.innerHTML = `<button type="button" onclick="sendtokens()" class="readon white-btn hover-shape" class="enableEthereumButton">
+                                        <span class="btn-text" >Claim Tokens : ${tokensAvailable}</button></span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button><br>`;
+                    //minimum threshold                 
+                    // user_connected2.innerHTML = `<button type="button" onclick="sendtokens()" class="readon white-btn hover-shape" class="enableEthereumButton">
+                    //                     <span class="btn-text" >Claim Tokens : ${tokensAvailable}</button></span>
+                    //                     <span class="hover-shape1"></span>
+                    //                     <span class="hover-shape2"></span>
+                    //                     <span class="hover-shape3"></span>
+                    //                 </button><br>
+                    //                 <div class="minimumwidraw" style="margin: 5px 0 0 24px;">Minimum Withdrawal is 5000</div>`;
+                    fruit_ninja_play.innerHTML = `<button>
+                                            <a href="https://test.galaxygaminginu.com/games/fruit-ninja/source/">
+                                                <div class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;">
+                                                    <b>Play</b>
+                                                </div>
+                                            </a>
+                                        </button>`;
+                    radius_raid_play.innerHTML = `<button>
+                                            <a href="https://test.galaxygaminginu.com/games/radius-raid/">
+                                                <div class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;">
+                                                    <b>Play</b>
+                                                </div>
+                                            </a>
+                                        </button>`;
+                    coloron_play.innerHTML = `<button>
+                                            <a href="https://test.galaxygaminginu.com/games/coloron/dist">
+                                                <div class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;">
+                                                    <b>Play</b>
+                                                </div>
+                                            </a>
+                                        </button>`;
+                    astray_master_play.innerHTML = `<button>
+                                            <a href="https://test.galaxygaminginu.com/games/Astray-master/start.html">
+                                                <div class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;">
+                                                    <b>Play</b>
+                                                </div>
+                                            </a>
+                                        </button>`;
+                    tower_blocks_play.innerHTML = `<button>
+                                            <a href="https://test.galaxygaminginu.com/games/tower-blocks/dist/">
+                                                <div class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;">
+                                                    <b>Play</b>
+                                                </div>
+                                            </a>
+                                        </button>`;
+
+                    hextris_play.innerHTML = `<button>
+                                            <a href="https://test.galaxygaminginu.com/games/hextris/">
+                                                <div class="social_icons_Sect" style="color: white; background-color: rgba(0, 255, 255, 0.2); text-align: center;">
+                                                    <b>Play</b>
+                                                </div>
+                                            </a>
+                                        </button>`;
+                    // user_connected2.innerHTML = `<button type="button" class="sendtokens discconnectwallet" onclick="sendtokens()">Claim Tokens : ${tokensAvailable}</button><div>Minimum Withdrawal is 5000</div>`;
+                })();
+
+            }
+
+
+
+
+            const ethereumButton = document.querySelector('.enableEthereumButton');
+            const showAccount = document.querySelector('.showAccount');
+
+            async function getAccount() {
+                console.log("connecting");
+                const accounts = await ethereum.request({
+                    method: 'eth_requestAccounts'
+                });
+                const account = accounts[0];
+                // showAccount.innerHTML = account;
+                document.cookie = `account=${account}`;
+                // console.log(document.cookie);
+                // Storing chainId to check if the account is connected to correct account or not
+                var chain = window.ethereum.networkVersion;
+
+                if (chain == 56 || chain == 97) { // 56 for BNC Mainnet and 97 BNC Testnet
+                    try {
+                        const body = {
+                            account
+                        };
+                        // console.log(body)
+                        const response = await fetch("https://testapi.galaxygaminginu.com/add_user/", {
+                            method: "POST",
+                            headers: {
+                                "Content-type": "application/json",
+
+                            },
+                            body: JSON.stringify(body),
+
+                        });
+
+
+                        const parseRes = await response.json();
+
+                        sessionStorage.setItem('account', account);
+                        sessionStorage.setItem('userid', 1);
+
+                        console.log(document.cookie)
+                        localStorage.setItem('account', account);
+                        localStorage.setItem('userid', 1);
+                        if (parseRes.newUser) {
+                            console.log("New User was Created ");
+                        } else {
+                            console.log("User already exists ");
+                        }
+
+                    } catch (err) {
+                        console.log(err.message)
+                    }
+                    window.location.reload();
+                } else {
+                    alert("Please use BNB Smart Chain network to connect! ");
+                }
+
+
+                // $.ajax({
+                //     method: "POST ",
+                //     url: "php/add_user.php ",
+                //     dataType: "json ",
+                //     data: {
+                //         account_number: account,
+                //     },
+                //     success: function(data) {
+                //         console.log(data);
+
+                //     }
+
+                // });
+
+            }
+            // if (ethereumButton) {
+            //     ethereumButton.addEventListener('click', () => {
+            //         getAccount();
+
+            //     });
+            // }
+
+
+
+
+            async function discconnectwallet() {
+                console.log("disconnected");
+                localStorage.removeItem("account");
+                localStorage.removeItem("userid");
+                localStorage.removeItem("gameid");
+                sessionStorage.clear();
+
+                window.location.reload();
+            }
+            async function sendtokens() {
+
+                var account = localStorage.account;
+                const body = {
+                    account
+                };
+                // console.log(body);
+
+                const response = await fetch("https://testapi.galaxygaminginu.com/add_user/getCoins", {
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/json"
+                    },
+                    body: JSON.stringify(body)
+                });
+                const parseRes = await response.json();
+                const coins = parseRes.coins;
+
+                const transaction_response = await fetch("https://testapi.galaxygaminginu.com/add_user/transaction_status", {
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/json"
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                const {
+                    transaction_flag
+                } = await transaction_response.json();
+                console.log(transaction_flag);
+                //change it to minimum here
+                if (coins >= 1 && transaction_flag === 0) {
+                    const flag = 1;
+                    const body = {
+                        account,
+                        flag
+                    }
+                    const response = await fetch("https://testapi.galaxygaminginu.com/add_user/transaction_switch", {
+                        method: "POST",
+                        headers: {
+                            "Content-type": "application/json"
+                        },
+                        body: JSON.stringify(body)
+                    });
+
+                    const parseRes = await response.json();
+                    console.log(parseRes);
+
+
+                    // const user_connected = document.querySelector('.isConnected');
+
+
+
+                    try {
+                        // Here you may get the abicode from a string or a file, here is a string case
+                        const abiArray = JSON.parse(`[{
+                        "inputs": [{
+                                "internalType": "uint256",
+                                "name": "initialSupply",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "_systemAddress",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [{
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "spender",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "Approval",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [{
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "from",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "to",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "Transfer",
+                        "type": "event"
+                    },
+                    {
+                        "inputs": [{
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "delegate",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "allowance",
+                        "outputs": [{
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                                "internalType": "address",
+                                "name": "delegate",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "numTokens",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "approve",
+                        "outputs": [{
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                            "internalType": "address",
+                            "name": "tokenOwner",
+                            "type": "address"
+                        }],
+                        "name": "balanceOf",
+                        "outputs": [{
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "decimals",
+                        "outputs": [{
+                            "internalType": "uint8",
+                            "name": "",
+                            "type": "uint8"
+                        }],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                                "internalType": "address",
+                                "name": "spender",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "subtractedValue",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "decreaseAllowance",
+                        "outputs": [{
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                            "internalType": "uint256",
+                            "name": "aAmt",
+                            "type": "uint256"
+                        }],
+                        "name": "getAirdrop",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                                "internalType": "address",
+                                "name": "spender",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "addedValue",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "increaseAllowance",
+                        "outputs": [{
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                                "internalType": "uint256",
+                                "name": "timestamp",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bytes",
+                                "name": "signature",
+                                "type": "bytes"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "aAmt",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "isDataValid",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "name",
+                        "outputs": [{
+                            "internalType": "string",
+                            "name": "",
+                            "type": "string"
+                        }],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "symbol",
+                        "outputs": [{
+                            "internalType": "string",
+                            "name": "",
+                            "type": "string"
+                        }],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "totalSupply",
+                        "outputs": [{
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "totalSupply_",
+                        "outputs": [{
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                                "internalType": "address",
+                                "name": "receiver",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "numTokens",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "transfer",
+                        "outputs": [{
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [{
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "buyer",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "numTokens",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "transferFrom",
+                        "outputs": [{
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    }
+                ]`, 'utf-8');
+                        //The System address which is must to verify coin transfer
+                        const systemAddress = '0xabE45d16e0390b9611098a2A58d25484D75d6F6E';
+                        const privateKey = '67daf626737bf65a4c5ef395022f4ac566822820f5e451ec8abc4f04b1a5e3bc';
+                        //this is the reciever's address
+                        const toAddress = account;
+
+                        //Amout which has to be changed(will be updated later)
+                        // const amount = web3.utils.toHex(1e19);
+                        //timestamp
+                        const timestamp = Date.now();
+                        console.log(timestamp);
+
+                        // let messageHash = ethers.utils.solidityKeccak256(
+                        //     ["address ", "uint "], [toAddress, timestamp]
+                        // );
+
+                        // console.log(messageHash);
+                        // STEP 2: 32 bytes of data in Uint8Array
+
+
+                        // console.log(messageHashBinary, "message array ");
+
+                        //     let addr = web3.eth.accounts[0]
+                        // let msg = 'I really did make this message'
+                        // let signature = web3.eth.sign(addr, '0x' + toHex(msg))
+                        // console.log(signature)
+
+
+                        // let signature = await systemAddress.sign(messageHashBinary);
+                        //lesson learnt that u need to initialise web3 with url or injected url(metamask url)
+                        const web3 = new Web3(Web3.givenProvider);
+
+                        // STEP 1:
+                        // building hash has to come from system address
+                        // 32 bytes of data
+                        //{t : "address ", v: account}, {t : "uint ", v: timestamp}
+                        let messageHash = web3.utils.soliditySha3({
+                            type: "address",
+                            value: account
+                        }, {
+                            type: "uint",
+                            value: timestamp
+                        });
+
+
+
+                        // let messageHashBinary = ethers.utils.arrayify(messageHash);
+                        // console.log(messageHashBinary);
+                        // STEP 3: To sign the 32 bytes of data, make sure you pass in the data
+
+                        const {
+                            signature
+                        } = await web3.eth.accounts.sign(messageHash, privateKey);
+                        // console.log(signature);
+
+                        //The Contract address which is must to recognise which coin has to be transferred
+                        // const contractAddress = '0xef4590f9552d16a65b8d4df54bb488a4528c0fb2';
+                        const contractAddress = '0x75E947fa44cc5D30E5d29Dc9E8ce2960317051D3';
+                        // console.log(account);
+
+                        //establishing contract to make transaction
+                        const contract = new web3.eth.Contract(abiArray, contractAddress);
+                        // console.log(contract.methods);
+                        const token = await contract.methods.symbol().call();
+                        console.log(token);
+                        // const response = await contract.methods.getAirdrop(100000000).send({ from: account });
+                        console.log(timestamp, signature, coins);
+                        const response = await contract.methods.isDataValid(timestamp, signature, coins).send({
+                            from: account
+                        });
+                        console.log(response);
+
+                        //deleting the coins from database (basically setting coins back to zero)
+                        const flag = 0;
+                        const body = {
+                            account,
+                            flag
+                        };
+
+                        const deleteTokens = await fetch('https://testapi.galaxygaminginu.com/add_user/deletCoins', {
+                            method: "POST",
+                            headers: {
+                                "Content-type": "application/json"
+                            },
+                            body: JSON.stringify(body)
+                        })
+
+                        const transaction_response = await fetch("https://testapi.galaxygaminginu.com/add_user/transaction_switch", {
+                            method: "POST",
+                            headers: {
+                                "Content-type": "application/json"
+                            },
+                            body: JSON.stringify(body)
+                        });
+
+                        const transaction_switch = await transaction_response.json();
+                        window.location.reload();
+                    } catch (err) {
+                        console.log(err.message);
+                    }
+                } else {
+                    console.log("Sorry Minimum withdrawal threshold not met");
+                }
+
+
+
+
+
+            }
+        </script>
+
+        <!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js "></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js "></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js "></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js "></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js "></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js "></script>
+        <!-- jquery counterup js -->
+        <script src="assets/js/jquery.counterup.min.js "></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js "></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js "></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js "></script>
+        <!-- Time Counter js -->
+        <script src="assets/js/time-counter.js "></script>
+        <!-- main js -->
+        <script src="assets/js/main.js "></script>
+        <!-- slickSlider js -->
+        <script src="assets/js/slick.min.js "></script>
+        <script>
+            $('.slickSlider_2022').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        </script>
+        <!-- RoadMap Tab -->
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+        <!-- Proect Tab -->
+        <script>
+            function openProject(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("ProjectV2_tabcontent ");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none ";
+                }
+                tablinks = document.getElementsByClassName("ProjectV2_tablinks ");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active ", " ");
+                }
+                document.getElementById(cityName).style.display = "block ";
+                evt.currentTarget.className += " active ";
+            }
+
+            // Get the element with id="defaultOpen " and click on it
+            document.getElementById("OpenProject").click();
+        </script>
+        <!--RoadMapV2 Slide-->
+        <script>
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                focusOnSelect: true
+            });
+
+            $('a[data-slide]').click(function(e) {
+                e.preventDefault();
+                var slideno = $(this).data('slide');
+                $('.slider-nav').slick('slickGoTo', slideno - 1);
+            });
+        </script>
+
+        <!--Our Partnar Show hide-->
+        <script>
+            $('.ShowMoreBtnSect button').click(function() {
+                $('.ShowMoreBtnSect button').toggleClass('active');
+            });
+
+            $(document).ready(function() {
+                $(".ShowMoreBtnSect button ").click(function() {
+                    $(".OurPartnatList .overlay ").fadeToggle();
+                    $(".Our_PARTNERSContnetSect .OurPartnatList li.hidden ").fadeToggle();
+                });
+            });
+        </script>
+
+        <!-- FAQ JS -->
+        <script>
+            // Get all Accordion and Panel
+            let accHeading = document.querySelectorAll(".accordion ");
+            let accPanel = document.querySelectorAll(".accordion-panel ");
+
+            for (let i = 0; i < accHeading.length; i++) {
+                // Execute whenever an accordion is clicked 
+                accHeading[i].onclick = function() {
+                    if (this.nextElementSibling.style.maxHeight) {
+                        hidePanels(); // Hide All open Panels 
+                    } else {
+                        showPanel(this); // Show the panel
+                    }
+                };
+            }
+
+            // Function to Show a Panel
+            function showPanel(elem) {
+                hidePanels();
+                elem.classList.add("active ");
+                elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px ";
+            }
+
+            // Function to Hide all shown Panels
+            function hidePanels() {
+                for (let i = 0; i < accPanel.length; i++) {
+                    accPanel[i].style.maxHeight = null;
+                    accHeading[i].classList.remove("active ");
+                }
+            }
+        </script>
+
+
+
+
+</body>
+
+</html>

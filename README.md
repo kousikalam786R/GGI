@@ -1,1 +1,1 @@
-# GGI
+# galaxy-gaming
