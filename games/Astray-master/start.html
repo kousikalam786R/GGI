@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/homeV2/GGI logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <title>Gaming Galaxy - Astray Maze</title>
+</head>
+<script>
+    if (!localStorage.account) {
+        window.location.href = "https://test.galaxygaminginu.com/";
+    }
+
+    function homePage() {
+        window.location.href = "https://test.galaxygaminginu.com/";
+    }
+    // $(document).ready(function() {
+
+    //         // Prepare the instructions.
+    //         $('#instructions').center();
+    //         $('#instructions').hide();
+    //         KeyboardJS.bind.key('i', function() {
+    //                 $('#instructions').show()
+    //             },
+    //             function() {
+    //                 $('#instructions').hide()
+    //             });
+
+    //         // Create the renderer.
+    //         renderer = new THREE.WebGLRenderer();
+    //         renderer.setSize(window.innerWidth, window.innerHeight);
+    //         document.body.appendChild(renderer.domElement);
+
+    //         // Bind keyboard and resize events.
+    //         KeyboardJS.bind.axis('left', 'right', 'down', 'up', onMoveKey);
+    //         KeyboardJS.bind.axis('h', 'l', 'j', 'k', onMoveKey);
+    //         $(window).resize(onResize);
+
+
+    //         // Set the initial game state.
+    //         gameState = 'initialize';
+
+    //         // Start the game loop.
+    //         requestAnimationFrame(gameLoop);
+
+    //     })
+    (async() => {
+
+        const response = await fetch("https://testapi.galaxygaminginu.com/astray_master/create_user", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json",
+                account: localStorage.account
+            },
+        });
+
+
+        const parseRes = await response.json();
+        console.log(parseRes);
+        const show_coins = document.querySelector('.show-coins');
+
+        show_coins.innerHTML = parseRes.coins;
+
+    })();
+</script>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main_div {
+        height: 100vh;
+        background-image: linear-gradient(rgba(66, 34, 34, 0.5), rgba(43, 41, 41, 0.5)), url('images/Background.jpg');
+        color: white;
+        font-family: 'Shizuru', cursive;
+    }
+    
+    #instructions {
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+        text-align: center;
+        padding: 32px;
+        margin: 0px;
+        display: inline;
+        border: 2px solid white;
+    }
+    
+    .coins_div {
+        font-size: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .tooltip {
+        display: inline-block;
+        position: relative;
+        border-bottom: 1px dotted #666;
+        text-align: left;
+    }
+    
+    .tooltip .left {
+        min-width: 200px;
+        top: 50%;
+        right: 100%;
+        margin-right: 20px;
+        transform: translate(0, -50%);
+        padding: 10px 20px;
+        color: #444444;
+        background-color: #EEEEEE;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 99999999;
+        box-sizing: border-box;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    
+    .tooltip {
+        display: inline-block;
+        position: relative;
+        border-bottom: 1px dotted #666;
+        text-align: left;
+    }
+    
+    .tooltip h3 {
+        margin: 12px 0;
+    }
+    
+    .tooltip .right {
+        min-width: 300px;
+        max-width: 400px;
+        top: 50%;
+        left: 100%;
+        margin-left: 20px;
+        transform: translate(0, -50%);
+        padding: 0;
+        color: #EEEEEE;
+        background-color: #444444;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 99999999;
+        box-sizing: border-box;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s;
+    }
+    
+    .tooltip:hover .right {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .tooltip .right img {
+        width: 400px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .tooltip .text-content {
+        padding: 10px 20px;
+    }
+    
+    .tooltip .right i {
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -12px;
+        width: 12px;
+        height: 24px;
+        overflow: hidden;
+    }
+    
+    .tooltip .right i::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 0;
+        top: 50%;
+        transform: translate(50%, -50%) rotate(-45deg);
+        background-color: #444444;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .start_game {
+        transition: all .2s ease-in-out;
+        display: inline-block;
+    }
+    
+    .start_game:hover {
+        transform: scale(1.2, 1.2);
+    }
+    
+    .instructions {
+        transition: all .2s ease-in-out;
+        display: inline-block;
+    }
+    
+    .instructions:hover {
+        transform: scale(1.1, 1.1);
+    }
+</style>
+
+<body>
+    <div class="main_div">
+        <button type="button" class="btn btn-primary" onclick="homePage()">Back To Home Page</button>
+        <div class="coins_div" style="font-size: 50px;display:flex;padding-left: 10px;">
+            <img src="images/Dollar-Coins-PNG_azdjjc.png" alt="" style="width: 50px;height: 50px;">
+            <p style="margin: 0;" class="show-coins">O</p>
+        </div>
+        <div class="tooltip">
+            <p class="instructions" style="font-size: 25px;color: rgb(255 142 0);padding-left: 10px;"> Instructions.</p>
+            <div class="right">
+                <div class="text-content" style="text-transform: uppercase;">
+                    <ul>
+                        <li>Use left right up down arrows to move the ball</li>
+                        <li>Fpr every level you will get a number of coins which will increase as you level up.</li>
+                    </ul>
+                </div>
+                <i></i>
+            </div>
+        </div>
+
+
+        <div class="second_d" style="text-align: center;">
+            <p style="font-size:90px;">AstrAy MAze</p>
+        </div>
+        <div class="second_d" style="text-align: center;">
+            <a href="https://test.galaxygaminginu.com/games/Astray-master/astray.html" class="start_game" style="font-size: 90px;text-decoration: none;color: rgb(255 142 0);">Start</a>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
