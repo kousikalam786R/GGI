@@ -4185,7 +4185,7 @@ section.loader_first {
     background: #090B1A;
     width: 100%;
     padding-top: 70px;
-    padding-bottom: 140px;
+    padding-bottom: 0px;
 }
 
 .TeamDetailsContainer {
